@@ -61,3 +61,17 @@ div {
 #white {
 	color: white;
 }
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #0a0a0a;
+}
+
+ul {
+    background-color: #0a0a0a;
+}
