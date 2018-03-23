@@ -1,10 +1,12 @@
 body {
+	/* Set the font to Arial and background color to black */
 	font-family: Arial;
 	background-color: #0a0a0a;
 }
 
 
 #welcome-text {
+	/* Make the text centred and set the color to white */
 	text-align: center;
 	color: white;
 }
@@ -24,12 +26,13 @@ body {
 }
 
 @media only screen and (max-device-width: 1024px) {
+	/* turns off the parallax effect on mobile */
     .parallax {
         background-attachment: scroll;
     }
 }
 
-div {
+.div {
 	color: white;
 	background-color: #0a0a0a;
 	display: block;
@@ -89,8 +92,4 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
-}
-
-.div {
-	
 }
