@@ -1,28 +1,55 @@
-body {
-	/* Set the font to Arial and background color to black */
-	font-family: Arial;
-	background-color: #0a0a0a;
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
 }
 
-
-#welcome-text {
-	/* Make the text centred and set the color to white */
-	text-align: center;
-	color: white;
+h1 {
+  letter-spacing: -15px;
+  font-family: Open Sans;
+  color: white;
+  text-align: center;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 200px;
 }
-.parallax { 
-    /* The image used */
-    background-image: url("logo.png");
 
-    /* Set a specific height */
-    height: 500px;
-	width: 100%;
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png);
+  background-color: rgb(250,228, 216);
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -30,13 +57,6 @@ body {
     .parallax {
         background-attachment: scroll;
     }
-}
-
-.div {
-	color: white;
-	background-color: #0a0a0a;
-	display: block;
-	padding: 50px 80px;
 }
 
 #youtube_parallax {
